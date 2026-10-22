@@ -1,0 +1,71 @@
+digraph CasosDeUso {
+  graph [
+    rankdir=LR,
+    bgcolor="white",
+    pad="0.35",
+    nodesep="0.38",
+    ranksep="0.85",
+    splines=polyline,
+    fontname="DejaVu Sans",
+    fontsize=20,
+    labelloc=t,
+    label="DIAGRAMA DE CASOS DE USO\nSistema de Gerenciamento de Estoque"
+  ];
+  node [fontname="DejaVu Sans", fontsize=10, color="#334155", fontcolor="#0f172a"];
+  edge [fontname="DejaVu Sans", fontsize=9, color="#64748b", penwidth=1.1, dir=none];
+
+  Admin [shape=none, margin=0, label="  O\n /|\\\n / \\\nAdministrador", fontsize=10];
+  Estoquista [shape=none, margin=0, label="  O\n /|\\\n / \\\nEstoquista", fontsize=10];
+  Gerente [shape=none, margin=0, label="  O\n /|\\\n / \\\nGerente", fontsize=10];
+
+  subgraph cluster_sistema {
+    label="Sistema de Gerenciamento de Estoque";
+    style="rounded";
+    color="#2563eb";
+    penwidth=1.8;
+    margin=18;
+    fontname="DejaVu Sans";
+    fontsize=15;
+
+    node [shape=ellipse, style="filled", fillcolor="#eff6ff", color="#60a5fa", penwidth=1.2, width=2.65, height=0.55, fixedsize=false, margin="0.12,0.08"];
+    UC01 [label="UC01 — Autenticar no sistema\ncom controle de acesso"];
+    UC02 [label="UC02 — Gerenciar contas\nde usuários"];
+    UC03 [label="UC03 — Gerenciar fornecedores"];
+    UC04 [label="UC04 — Gerenciar categorias\ne unidades de medida"];
+    UC05 [label="UC05 — Gerenciar catálogo\nde produtos"];
+    UC06 [label="UC06 — Registrar entrada\nde lote de mercadorias"];
+    UC07 [label="UC07 — Atualizar status do lote"];
+    UC08 [label="UC08 — Registrar saída por\nvenda ou expedição"];
+    UC09 [label="UC09 — Registrar baixa manual\npor quebra ou perda"];
+    UC10 [label="UC10 — Monitorar alertas\nde estoque crítico"];
+    UC11 [label="UC11 — Consultar histórico\ne auditoria"];
+    UC12 [label="UC12 — Calcular valor financeiro\ndo estoque"];
+    UC13 [label="UC13 — Relatório de produtos\ncom maior e menor saída"];
+
+    {rank=same; UC01; UC02; UC03; UC04;}
+    {rank=same; UC05; UC06; UC07; UC08; UC09; UC10;}
+    {rank=same; UC11; UC12; UC13;}
+    UC01 -> UC02 -> UC03 -> UC04 [style=invis, weight=10];
+    UC05 -> UC06 -> UC07 -> UC08 -> UC09 -> UC10 [style=invis, weight=10];
+    UC11 -> UC12 -> UC13 [style=invis, weight=10];
+  }
+
+  {rank=same; Admin; Estoquista; Gerente;}
+  Admin -> Estoquista -> Gerente [style=invis, weight=10];
+
+  Admin -> UC01 [minlen=1];
+  Estoquista -> UC01 [minlen=1];
+  Gerente -> UC01 [minlen=1];
+  Admin -> UC02;
+  Admin -> UC03;
+  Admin -> UC04;
+  Estoquista -> UC05;
+  Estoquista -> UC06;
+  Estoquista -> UC07;
+  Estoquista -> UC08;
+  Estoquista -> UC09;
+  Estoquista -> UC10;
+  Gerente -> UC11;
+  Gerente -> UC12;
+  Gerente -> UC13;
+}
