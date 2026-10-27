@@ -45,7 +45,7 @@ A arquitetura do projeto segue um modelo modular (separando interface, regras de
 
 ## Tecnologias utilizadas
 
-- Linguagens de programação: Python e C
+- Linguagens de programação: Python e Javascript
 - Banco de dados: SQLite / MySQL (a definir a implementação exata)
 - Controle de versão: Git e GitHub
 
