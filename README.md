@@ -1,7 +1,7 @@
 # Sistema de Gerenciamento de Estoque (WMS)
 
 ![Status](https://img.shields.io/badge/Status-Em_Desenvolvimento-yellow)
-![Linguagens](https://img.shields.io/badge/Linguagens-Python%20%7C%20C-blue)
+![Linguagens](https://img.shields.io/badge/Linguagens-Python%20%7C%20C%20%7C%20JavaScript-blue)
 ![Curso](https://img.shields.io/badge/Curso-ADS%20IFPI-green)
 
 ## Sobre o projeto
