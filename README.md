@@ -64,25 +64,27 @@ sistema-gerenciamento-estoque/
 ├── tests/              # Testes das funcionalidades
 ├── README.md           # Documentação inicial do repositório
 └── .gitignore          # Arquivos e pastas a serem ignorados pelo Git
-
-## Tecnologias utilizadas
-
+```
+💻 Tecnologias utilizadas
 - Linguagens de programação: Python e Javascript
+
 - Banco de dados: SQLite / MySQL (a definir a implementação exata)
+
 - Controle de versão: Git e GitHub
 
-## Equipe de desenvolvimento
-
+👥 Equipe de desenvolvimento
 - Alípio Joaquim da Rocha Barbosa
+
 - Guilherme
-- Igor Henrique Sousa Luz
+
+- Igor Henrique Sousa
+
 - Kauã Gonçalves Fialho Oliveira
+
 - Matheus Lelis
 
-## Como executar
+🚀 Como executar
+🚧 (As instruções para instalação de dependências, configuração do banco de dados e execução do projeto serão adicionadas após a implementação inicial do sistema).
 
-(As instruções para instalação de dependências, configuração do banco de dados e execução do projeto serão adicionadas após a implementação inicial do sistema).
-
-## Licença
-
-Projeto acadêmico. A definição de uma licença open-source (ex: MIT) será realizada posteriormente.
+📄 Licença
+- Projeto acadêmico. A definição de uma licença open-source (ex: MIT) será realizada posteriormente.
