@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="WhatsApp Image 2026-11-03 at 13.21.23.jpeg" alt="Logo InvenTech" width="450">
+  <img src="logo-iventech.jpg" alt="Logo InvenTech" width="450">
 
   # InvenTech
   **Sistema de Gerenciamento de Estoque (WMS)**
